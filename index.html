@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Images</title>
+<style>
+.resp {
+   /* height: 100vh; */
+   width: 100vw;
+   max-width: 100%;
+   /* width: 100vmin;
+   height: 100vmin; */
+}
+
+.imagespot {
+  width: 640px;
+  height: 240px;  /* exact dimension of image */
+  background: #ffffff url(theimage.jpg) top left no-repeat;
+}
+
+</style>
+</head>
+<body>
+    <img class="resp" src="baek2.jpg">
+    <picture>
+        <source media="(min-width: 650px)" srcset="baek3.jpg">
+        <!-- <source media="(min-width: 465px)" srcset="kitten-medium.png"> -->
+        <!-- <img src="kitten-small.png" alt="Cute kitten"> -->
+    </picture>
+
+    <div class="imagespot">
+        Hi, this is Baekhyun!
+    </div>
+      
+    <!-- .imagespot {
+        width: 640px;
+        height: 240px;  /* exact dimension of image */
+        background: #ffffff url(theimage.jpg) top left no-repeat;
+    } -->
+
+    <figure class="imagespot">
+        <img src="baek3.jpg" class="gambar">
+        <figcaption>I'm skiing</figcaption>
+    </figure>
+
+    <!-- <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="2" fill="yellow">
+        Sorry, your browser does not support inline SVG.
+    </svg> -->
+      
+
+</body>
+</html>
